@@ -1,27 +1,17 @@
 {
   "name": "michaeldsharpcom-api",
-  "version": "1.0.0",
-  "description": "the backend for michaeldsharp.com",
-  "main": "server.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/programmerinprogress/michaeldsharpcom-api.git"
-  },
-  "author": "Michael D Sharp",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/programmerinprogress/michaeldsharpcom-api/issues"
+    "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "~1.0.1",
-    "express": "~4.0.0",
-    "jsonwebtoken": "^7.1.9",
-    "mongodb": "^2.2.11",
-    "mongoose": "^4.4.20",
-    "morgan": "^1.7.0"
-  },
-  "homepage": "https://github.com/programmerinprogress/michaeldsharpcom-api#readme"
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  }
 }
