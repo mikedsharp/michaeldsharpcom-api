@@ -19,7 +19,15 @@
     "application/json"
   ],
   "paths": {
+      "/projects": {
+          "get" : {
+              "summary": "list all projects",
+              "operationId": "listProjects", 
+              "tags": ["projects"]
+          }
+      }
   },
   "definitions": {
+
   }
 }
