@@ -2,6 +2,9 @@ node_modules/
 .gitignore
 .elasticbeanstalk/
 .vscode/
+.vscode/launch.json
+.vscode
+launch.json
 
 # Elastic Beanstalk Files
 
