@@ -15,7 +15,7 @@ router.get('/:projectId', function(req, res, next) {
       "data": json.data[req.params.projectId]
     });
   } else {
-    return res.json({}); 
+    return res.json({"error": "requested project not found."}); 
   }
 });
 
