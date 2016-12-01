@@ -9,6 +9,7 @@ var cors = require('cors');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var projects = require('./routes/projects');
+var contact = require('./routes/contact');
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'swagger')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/projects', projects);
+app.use('/contact', contact);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

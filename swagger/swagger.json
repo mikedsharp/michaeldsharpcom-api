@@ -16,7 +16,8 @@
     "application/json"
   ],
   "produces": [
-    "application/json"
+    "application/json", 
+    "text/html"
   ],
   "paths": {
       "/projects": {
@@ -39,6 +40,28 @@
                 "type": "string"
               }]
           }
+      }, 
+      "/contact" : {
+        "post": {
+          "summary": "send mike an email from michaeldsharp.com", 
+          "operationId": "sendUserMessage", 
+          "tags": ["contact"], 
+          "parameters": [{
+            "in": "form", 
+            "name": "name", 
+            "type": "string"
+          }, 
+          {
+            "in": "form", 
+            "name": "body", 
+            "type": "string"
+          }, 
+          {
+            "in": "form", 
+            "name": "from", 
+            "type": "string"
+          }]
+        }
       }
   },
   "definitions": {
