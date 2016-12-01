@@ -5,6 +5,8 @@ node_modules/
 .vscode/launch.json
 .vscode
 launch.json
+/.vscode/
+/ .vscode/
 
 # Elastic Beanstalk Files
 
