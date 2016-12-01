@@ -25,6 +25,20 @@
               "operationId": "listProjects", 
               "tags": ["projects"]
           }
+      },
+      "/projects/{projectId}": {
+         "get" : {
+              "summary": "retrieve a single project by id",
+              "operationId": "getProjectById", 
+              "tags": ["projects"], 
+              "parameters": [{
+                "name": "projectId", 
+                "in": "path", 
+                "required": true, 
+                "description": "the identifier for the project to retrieve", 
+                "type": "string"
+              }]
+          }
       }
   },
   "definitions": {

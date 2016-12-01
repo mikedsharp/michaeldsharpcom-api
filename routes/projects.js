@@ -8,4 +8,11 @@ router.get('/', function(req, res, next) {
   })
 });
 
+router.get('/:projectId', function(req, res, next) {
+  res.json({
+      message: "this is where a single project will be returned if it exists"
+  })
+});
+
+
 module.exports = router;
