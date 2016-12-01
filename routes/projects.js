@@ -1,18 +1,22 @@
 var express = require('express');
-var router = express.Router();
+var router = express.Router()
+var fs = require('fs');
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
-  return res.json({
-      message: "this is where you will see projects when I add them"
-  });
+  var json = JSON.parse(fs.readFileSync(__dirname + '/projects.json', 'utf8')); 
+  return res.json(json);
 });
 
 router.get('/:projectId', function(req, res, next) {
-  return res.json({
-      message: "this is where a single project will be returned if it exists"
-  });
+  var json = JSON.parse(fs.readFileSync(__dirname + '/projects.json', 'utf8')); 
+  
+  if(json.data[req.params.projectId]){
+    return res.json({
+      "data": json.data[req.params.projectId]
+    });
+  } else {
+    return res.json({}); 
+  }
 });
-
 
 module.exports = router;
