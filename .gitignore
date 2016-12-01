@@ -1,6 +1,7 @@
 node_modules/
 .gitignore
 .elasticbeanstalk/
+.vscode/
 
 # Elastic Beanstalk Files
 
