@@ -47,17 +47,17 @@
           "operationId": "sendUserMessage", 
           "tags": ["contact"], 
           "parameters": [{
-            "in": "form", 
+            "in": "formData", 
             "name": "name", 
             "type": "string"
           }, 
           {
-            "in": "form", 
+            "in": "formData", 
             "name": "body", 
             "type": "string"
           }, 
           {
-            "in": "form", 
+            "in": "formData", 
             "name": "from", 
             "type": "string"
           }]
