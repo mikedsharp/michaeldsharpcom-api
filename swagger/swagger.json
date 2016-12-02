@@ -50,16 +50,19 @@
           "parameters": [{
             "in": "formData", 
             "name": "name", 
+            "required": true,
             "type": "string"
           }, 
           {
             "in": "formData", 
             "name": "body", 
+            "required": true,
             "type": "string"
           }, 
           {
             "in": "formData", 
             "name": "from", 
+            "required": true,
             "type": "string", 
             "pattern": "\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b."
           }]
