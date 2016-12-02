@@ -13,7 +13,8 @@
     "http"
   ],
   "consumes": [
-    "application/json"
+    "application/json", 
+    "x-www-form-urlencoded"
   ],
   "produces": [
     "application/json", 
