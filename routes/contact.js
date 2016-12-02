@@ -7,8 +7,8 @@ router.post('/', function(req, res, next) {
     var smtpTransport = nodemailer.createTransport("SMTP",{
     service: 'Hotmail',
     auth: {
-        "user":  mailConfig.email,
-        "pass":  mailConfig.password
+        "user":  mailConfig ? mailConfig.email : process.env.EMAIL,
+        "pass":   mailConfig ? mailConfig.password : process.env.password,
     }
     });
 
