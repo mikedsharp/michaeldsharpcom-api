@@ -1,14 +1,13 @@
 var express = require('express');
 var router = express.Router()
 var nodemailer = require('nodemailer');
-var mailConfig = require('../mailConfig'); 
 
 router.post('/', function(req, res, next) {
     var smtpTransport = nodemailer.createTransport("SMTP",{
     service: 'Hotmail',
     auth: {
-        "user":  mailConfig ? mailConfig.email : process.env.EMAIL,
-        "pass":   mailConfig ? mailConfig.password : process.env.password,
+        "user":   process.env.EMAIL,
+        "pass":   process.env.password,
     }
     });
 
