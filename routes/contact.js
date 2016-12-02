@@ -7,7 +7,7 @@ router.post('/', function(req, res, next) {
     service: 'Hotmail',
     auth: {
         "user":   process.env.EMAIL,
-        "pass":   process.env.password,
+        "pass":   process.env.PASSWORD,
     }
     });
 
