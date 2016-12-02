@@ -13,7 +13,7 @@ router.post('/', function(req, res, next) {
 
     var mailOptions = {
         "from": req.body.name +  " <" + req.body.from + ">", 
-        "to":  mailConfig.email, 
+        "to":  process.env.EMAIL, 
         "subject": "A user query from michaeldsharp.com",
         "text": req.body.body
     };
