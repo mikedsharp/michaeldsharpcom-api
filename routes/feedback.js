@@ -8,7 +8,7 @@ router.post('/', function(req, res, next) {
   } else {
       console.log('dislike registered');
   }
-  res.send('like (or dislike recorded!)');
+  res.json({message: 'like (or dislike recorded!)'});
 });
 
 module.exports = router;
