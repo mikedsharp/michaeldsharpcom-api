@@ -7,7 +7,7 @@
       "name": ""
     }
   },
-  "host": "localhost:3000",
+  "host": "http://api.michaeldsharp.com",
   "basePath": "/",
   "schemes": [
     "http"
