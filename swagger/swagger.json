@@ -7,7 +7,7 @@
       "name": ""
     }
   },
-  "host": "api.michaeldsharp.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
     "http"
@@ -21,6 +21,19 @@
     "text/html"
   ],
   "paths": {
+      "/feedback": {
+          "post" : {
+              "summary": "is that a like or a dislike?",
+              "operationId": "sendFeedback", 
+              "tags": ["feedback"], 
+              "parameters": [{
+                "in": "formData", 
+                "name": "like", 
+                "required": true,
+                "type": "boolean"
+              }]
+          }
+      },
       "/projects": {
           "get" : {
               "summary": "list all projects",
