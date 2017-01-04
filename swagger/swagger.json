@@ -7,7 +7,7 @@
       "name": ""
     }
   },
-  "host": "http://api.michaeldsharp.com",
+  "host": "api.michaeldsharp.com",
   "basePath": "/",
   "schemes": [
     "http"
