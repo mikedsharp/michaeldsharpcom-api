@@ -22,7 +22,11 @@ router.post('/', function(req, res, next) {
       private_key:  process.env.GOOGLE_DRIVE_PRIVATE_KEY
     }
 
-    doc.useServiceAccountAuth(creds_json, step);
+    try{
+        doc.useServiceAccountAuth(creds_json);
+    } catch(err){
+        res.json(err); 
+    }
   },
   function getInfoAndWorksheets(step) {
     res.json(creds_json);
