@@ -21,11 +21,11 @@ router.post('/', function(req, res, next) {
       client_email: process.env.GOOGLE_DRIVE_EMAIL,
       private_key:  process.env.GOOGLE_DRIVE_PRIVATE_KEY
     }
-     res.json(creds_json);
 
     doc.useServiceAccountAuth(creds_json, step);
   },
   function getInfoAndWorksheets(step) {
+    res.json(creds_json);
     doc.getInfo(function(err, info) {
       console.log('Loaded doc: '+info.title+' by '+info.author.email);
       sheet = info.worksheets[0];
