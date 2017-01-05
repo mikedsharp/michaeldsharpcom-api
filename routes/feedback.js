@@ -5,7 +5,7 @@ var async = require('async');
 
 /* POST likes/dislikes. */
 router.post('/', function(req, res, next) {
-  if(req.body.like === 'true'){
+  if(req.body.like === true){
       console.log('like registered');
   } else {
       console.log('dislike registered');
