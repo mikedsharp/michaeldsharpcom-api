@@ -33,14 +33,16 @@ router.post('/', function(req, res, next) {
   function updateSpreadsheet(step) {
     sheet.getCells({
       'min-row': 2,
-      'max-row': 4,
+      'max-row': 3,
+      'min-col': 2,
+      'max-col': 3,
       'return-empty': true
     }, function(err, cells) {
 
-      var cellLike = cells[1];
-      var lastLike = cells[2]; 
-      var cellDislike = cells[27];
-      var lastDislike = cells[28]; 
+      var cellLike = cells[0];
+      var lastLike = cells[1]; 
+      var cellDislike = cells[2];
+      var lastDislike = cells[3]; 
 
       if(req.body.like === true){
         cellLike.value = parseInt(cellLike.value) + 1; 
