@@ -10,7 +10,7 @@ router.post('/', function(req, res, next) {
   } else {
       console.log('dislike registered');
   }
-  res.json({message: 'like (or dislike recorded!)'});
+  
 
   var doc = new GoogleSpreadsheet('1kS7juEJ9G4uxKSplOf5HnWsWC3f6F66moVzKMeTFqxI');
   var sheet;
@@ -26,6 +26,12 @@ router.post('/', function(req, res, next) {
   },
   function getInfoAndWorksheets(step) {
     doc.getInfo(function(err, info) {
+      if(err){
+          res.json(err);
+          throw new Error(err);
+      } else {
+          res.json({message: 'like (or dislike recorded!)'});
+      }
       console.log('Loaded doc: '+info.title+' by '+info.author.email);
       sheet = info.worksheets[0];
       console.log('sheet 1: '+sheet.title+' '+sheet.rowCount+'x'+sheet.colCount);
