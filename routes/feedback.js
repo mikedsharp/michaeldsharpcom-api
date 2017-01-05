@@ -23,17 +23,14 @@ router.post('/', function(req, res, next) {
     };
     
     doc.useServiceAccountAuth(creds_json, step);
-    
   },
-  function getInfoAndWorksheets(step) {
+  function getFeedbackSpreadsheet(step) {
     doc.getInfo(function(err, info) {
-      console.log('Loaded doc: '+info.title+' by '+info.author.email);
       sheet = info.worksheets[0];
-      console.log('sheet 1: '+sheet.title+' '+sheet.rowCount+'x'+sheet.colCount);
       step();
     });
   },
-  function workingWithCells(step) {
+  function updateSpreadsheet(step) {
     sheet.getCells({
       'min-row': 2,
       'max-row': 4,
@@ -45,7 +42,7 @@ router.post('/', function(req, res, next) {
       var cellDislike = cells[27];
       var lastDislike = cells[28]; 
 
-      if(req.body.like === 'true'){
+      if(req.body.like === true){
         cellLike.value = parseInt(cellLike.value) + 1; 
         lastLike.value = new Date(Date.now()).toString(); 
       } else {
@@ -58,7 +55,6 @@ router.post('/', function(req, res, next) {
     });
   }
 ]);
-
 });
 
 module.exports = router;
