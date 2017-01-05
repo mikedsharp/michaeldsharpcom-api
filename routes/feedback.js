@@ -20,7 +20,7 @@ router.post('/', function(req, res, next) {
     // see notes below for authentication instructions!
     var creds_json = {
       client_email: process.env.GOOGLE_DRIVE_EMAIL,
-      private_key:  process.env.GOOGLE_PRIVATE_KEY
+      private_key:  process.env.GOOGLE_DRIVE_PRIVATE_KEY
     }
     doc.useServiceAccountAuth(creds_json, step);
   },
