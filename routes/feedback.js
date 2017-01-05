@@ -23,7 +23,7 @@ router.post('/', function(req, res, next) {
     }
 
     try{
-        doc.useServiceAccountAuth(creds_json);
+        doc.useServiceAccountAuth(creds_json, step);
     } catch(err){
         res.json(err); 
     }
