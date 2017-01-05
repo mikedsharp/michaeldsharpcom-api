@@ -10,15 +10,7 @@ router.post('/', function(req, res, next) {
   } else {
       console.log('dislike registered');
   }
-
-     var creds_json = {
-      "client_email": process.env.GOOGLE_DRIVE_EMAIL,
-      "private_key":  process.env.GOOGLE_DRIVE_PRIVATE_KEY
-    }
-
-
-  res.json(creds_json);
-
+ 
   var doc = new GoogleSpreadsheet('1kS7juEJ9G4uxKSplOf5HnWsWC3f6F66moVzKMeTFqxI');
   var sheet;
 
@@ -29,6 +21,8 @@ router.post('/', function(req, res, next) {
       client_email: process.env.GOOGLE_DRIVE_EMAIL,
       private_key:  process.env.GOOGLE_DRIVE_PRIVATE_KEY
     }
+     res.json(creds_json);
+
     doc.useServiceAccountAuth(creds_json, step);
   },
   function getInfoAndWorksheets(step) {
