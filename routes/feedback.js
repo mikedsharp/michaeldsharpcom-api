@@ -56,7 +56,7 @@ router.post('/', function(req, res, next) {
         lastDislike.value = new Date(Date.now()).toString(); 
       }
       sheet.bulkUpdateCells(cells, function(){
-           res.json('like/dislike posted successfully!'; 
+           res.json('like/dislike posted successfully!');
       }); //async
     });
   }
