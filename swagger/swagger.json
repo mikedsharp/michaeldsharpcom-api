@@ -13,13 +13,27 @@
     "http"
   ],
   "consumes": [
-    "application/json"
+    "application/json", 
+    "x-www-form-urlencoded"
   ],
   "produces": [
     "application/json", 
     "text/html"
   ],
   "paths": {
+      "/feedback": {
+          "post" : {
+              "summary": "is that a like or a dislike?",
+              "operationId": "sendFeedback", 
+              "tags": ["feedback"], 
+              "parameters": [{
+                "in": "formData", 
+                "name": "like", 
+                "required": true,
+                "type": "boolean"
+              }]
+          }
+      },
       "/projects": {
           "get" : {
               "summary": "list all projects",
@@ -49,17 +63,21 @@
           "parameters": [{
             "in": "formData", 
             "name": "name", 
+            "required": true,
             "type": "string"
           }, 
           {
             "in": "formData", 
             "name": "body", 
+            "required": true,
             "type": "string"
           }, 
           {
             "in": "formData", 
             "name": "from", 
-            "type": "string"
+            "required": true,
+            "type": "string", 
+            "pattern": "\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b."
           }]
         }
       }

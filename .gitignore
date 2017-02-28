@@ -9,7 +9,7 @@ launch.json
 / .vscode/
 mailConfig.js
 userConfig.js
-
+client_secret_2.json
 # Elastic Beanstalk Files
 
 .elasticbeanstalk/*
