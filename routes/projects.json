@@ -7,23 +7,15 @@
             "bgImage": "../../assets/macbook-splash.png", 
             "content": {
                 "slides": ["../../assets/macbook-splash.png"], 
-                "subHeading": "", 
+                "subHeading": "A pong/breakout clone with elements of random generation", 
                 "paragraphs": [
-                    "Art party jianbing blog, flexitarian raw denim church-key salvia tofu. Meggings listicle normcore street art, kitsch master cleanse sustainable DIY echo park chambray. Biodiesel ethical man braid, literally portland af craft beer VHS gluten-free hoodie gastropub distillery lyft. Next level synth fashion axe truffaut. Health goth etsy 90s, vegan godard locavore plaid fam deep v pitchfork. Sriracha synth vice, VHS tilde tote bag pour-over thundercats affogato distillery woke tattooed mlkshk tousled. Meggings iPhone flexitarian bushwick raw denim green juice..", 
-                    "Tote bag vexillologist gentrify, enamel pin XOXO keffiyeh prism iceland tattooed sriracha chartreuse health goth ugh venmo four loko. IPhone tattooed raw denim vegan. Williamsburg man braid plaid austin gastropub, fixie viral. Roof party distillery umami kitsch hella. Viral hell of small batch, enamel pin fingerstache cliche microdosing hot chicken leggings lumbersexual green juice. Direct trade literally poutine, next level celiac umami artisan blue bottle mixtape fam knausgaard gluten-free. Woke cray crucifix kale chips."
+                    "...", 
+                    "..."
                 ], 
                 "links": [
                     {
-                        "url": "http://youtube.com/programmerinprogress", 
-                        "text": "Video"
-                    }, 
-                    {
-                        "url": "http://github.com/programmerinprogress", 
+                        "url": "https://github.com/programmerinprogress/rebound", 
                         "text": "Source"
-                    }, 
-                    {
-                        "url": "http://google.com", 
-                        "text": "Download"
                     }
                 ]
             }
@@ -32,22 +24,77 @@
          {
             "name": "MapWork", 
             "id": "mapwork", 
-            "bgImage": "../../assets/macbook-splash.jpg"
+            "bgImage": "../../assets/macbook-splash.jpg", 
+                 "content": {
+                "slides": ["../../assets/macbook-splash.png"], 
+                "subHeading": "A HTML5 Canvas-based 2D game map editing tool", 
+                "paragraphs": [
+                    "...", 
+                    "..."
+                ], 
+                "links": [
+                    {
+                        "url": "https://www.youtube.com/watch?v=Q_2LNGzoTtM", 
+                        "text": "Video"
+                    }
+                ]
+            }
         },
          {
             "name": "BLOCK", 
             "id": "block", 
-            "bgImage": "../../assets/macbook-splash.jpg" 
+            "bgImage": "../../assets/macbook-splash.jpg", 
+                 "content": {
+                "slides": ["../../assets/macbook-splash.png"], 
+                "subHeading": "A quirky (read: terrible) 2D platformer I wrote in C++ back in 2008!", 
+                "paragraphs": [
+                    "..."
+                ], 
+                "links": [
+                    {
+                        "url": "https://www.youtube.com/watch?v=1xE9gM54mkI", 
+                        "text": "Video 1"
+                    }, 
+                    {
+                        "url": "https://www.youtube.com/watch?v=5TnCQslOU5M", 
+                        "text": "Video 2"
+                    }
+                ]
+            }
         },
          {
             "name": "Alien Invasion", 
             "id": "alien-invasion", 
-            "bgImage": "../../assets/macbook-splash.png" 
+            "bgImage": "../../assets/macbook-splash.png", 
+                 "content": {
+                "slides": ["../../assets/macbook-splash.png"], 
+                "subHeading": "A Space Invaders clone I wrote as a show piece for applying to universities, written in C++", 
+                "paragraphs": [
+                    "..."
+                ], 
+                "links": [
+                    {
+                        "url": "https://www.youtube.com/watch?v=2BzDCEyreyc", 
+                        "text": "Video"
+                    }
+                   
+                ]
+            }
         },
          {
             "name": "Meteor defence", 
             "id": "meteor-defence", 
-            "bgImage": "../../assets/macbook-splash.jpg" 
+            "bgImage": "../../assets/macbook-splash.jpg", 
+                 "content": {
+                "slides": ["../../assets/macbook-splash.png"], 
+                "subHeading": "A small game I wrote in C++ using the SFML library", 
+                "paragraphs": [
+                    "..."
+                ], 
+                "links": [
+                
+                ]
+            } 
         }
     ]
 
