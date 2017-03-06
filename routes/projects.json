@@ -4,9 +4,9 @@
         {
             "name": "Rebound", 
             "id": "rebound", 
-            "bgImage": "../../assets/macbook-splash.png", 
+            "bgImage": "rebound-thumb.png", 
             "content": {
-                "slides": ["../../assets/macbook-splash.png"], 
+                "slides": ["rebound-screenshot-1.png"], 
                 "subHeading": "A pong/breakout clone with elements of random generation", 
                 "paragraphs": [
                     "Rebound was written in C++, making use of the SFML multimedia library, the project was carried out from start to finish in 1 month for the Moosader Boards randomly generated/procedurally generated games competition.", 
@@ -25,9 +25,9 @@
          {
             "name": "MapWork", 
             "id": "mapwork", 
-            "bgImage": "../../assets/macbook-splash.jpg", 
+            "bgImage": "mapwork-thumb.png", 
                  "content": {
-                "slides": ["../../assets/macbook-splash.png"], 
+                "slides": ["mapwork-screenshot-1.png"], 
                 "subHeading": "A HTML5 Canvas-based 2D game map editing tool", 
                 "paragraphs": [
                     "MapWork was my final dissertation product from my Computer Science Degree (of which I gained a 1st!)", 
@@ -46,9 +46,9 @@
          {
             "name": "BLOCK", 
             "id": "block", 
-            "bgImage": "../../assets/macbook-splash.jpg", 
+            "bgImage": "block-thumb.png", 
                  "content": {
-                "slides": ["../../assets/macbook-splash.png"], 
+                "slides": ["block-screenshot-1.png"], 
                 "subHeading": "A quirky (read: terrible) 2D platformer I wrote in C++ back in 2008!", 
                 "paragraphs": [
                     "BLOCK is a project that I will always have a place in my heart, it is the project that really helped me cut my teeth in programming.", 
@@ -65,15 +65,15 @@
                         "text": "Video 2"
                     }
                 ]
-                
+
             }
         },
          {
             "name": "Alien Invasion", 
             "id": "alien-invasion", 
-            "bgImage": "../../assets/macbook-splash.png", 
+            "bgImage": "alien_invasion-thumb.png", 
                  "content": {
-                "slides": ["../../assets/macbook-splash.png"], 
+                "slides": ["alien_invasion-screenshot-1.png"], 
                 "subHeading": "A Space Invaders clone I wrote as a show piece for applying to universities, written in C++", 
                 "paragraphs": [
                     "I had an awful lot of fun writing this game, with a self-assigned deadline of 6 weeks I challenged myself to write a simple game that I could burn to CD (yes, CD!) and demo to prospective universities when I applied to them.", 
@@ -92,9 +92,9 @@
          {
             "name": "Meteor defence", 
             "id": "meteor-defence", 
-            "bgImage": "../../assets/macbook-splash.jpg", 
+            "bgImage": "meteor_defence-thumb.png", 
                  "content": {
-                "slides": ["../../assets/macbook-splash.png"], 
+                "slides": ["meteor_defence-screenshot-1.png"], 
                 "subHeading": "A small game I wrote in C++ using the SFML library", 
                 "paragraphs": [
                     "The aim of Meteor Defence is to protect your city from destruction from meteors using rockets. The user has a crosshair they control with their mouse.", 
