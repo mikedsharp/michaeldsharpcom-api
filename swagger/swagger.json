@@ -7,7 +7,7 @@
       "name": ""
     }
   },
-  "host": "michaeldsharpcom-api.herokuapp.com/",
+  "host": "michaeldsharpcom-api.herokuapp.com",
   "basePath": "/",
   "schemes": [
     "http"
