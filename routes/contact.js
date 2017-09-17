@@ -14,10 +14,10 @@ router.post('/', function(req, res, next) {
     });
 
     var mailOptions = {
-        "from": req.body.name +  " <" + req.body.from + ">", 
+        "from": process.env.EMAIL, 
         "to":  process.env.EMAIL, 
         "subject": "A user query from michaeldsharp.com",
-        "text": req.body.body
+        "text": "from:" + req.body.from + "\nMessage: " + req.body.body
     };
 
     smtpTransport.sendMail(mailOptions, function(err, data){
