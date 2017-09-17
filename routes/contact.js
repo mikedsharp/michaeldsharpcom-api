@@ -3,25 +3,25 @@ var router = express.Router()
 var nodemailer = require('nodemailer');
 
 router.post('/', function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     
     let smtpConfig = {
         host: 'smtp.live.com',
         port: 587,
-        secure: true, // upgrade later with STARTTLS
+        secure: false, // upgrade later with STARTTLS
         auth: {
             user: process.env.EMAIL,
             pass: process.env.PASSWORD
         }
     };
     
-    var smtpTransport = nodemailer.createTransport(smtpConfig, {from: 'msharp23@hotmail.co.uk'});
+    var smtpTransport = nodemailer.createTransport(smtpConfig, {from: process.env.EMAIL});
 
     var mailOptions = {
-        "to":  process.env.EMAIL, 
+        "to": process.env.EMAIL,
         "subject": "A user query from michaeldsharp.com",
-        "text": "from:" + req.body.from + "\nMessage: " + req.body.body
+        "text": "recipient email: " + req.body.from + 
+                "recipient name: " + req.body.name +
+                "\nMessage: " + req.body.body
     };
 
     smtpTransport.sendMail(mailOptions, function(err, data){
