@@ -16,10 +16,9 @@ router.post('/', function(req, res, next) {
         }
     };
     
-    var smtpTransport = nodemailer.createTransport(smtpConfig);
+    var smtpTransport = nodemailer.createTransport(smtpConfig, {from: 'msharp23@hotmail.co.uk'});
 
     var mailOptions = {
-        "from": process.env.EMAIL, 
         "to":  process.env.EMAIL, 
         "subject": "A user query from michaeldsharp.com",
         "text": "from:" + req.body.from + "\nMessage: " + req.body.body
