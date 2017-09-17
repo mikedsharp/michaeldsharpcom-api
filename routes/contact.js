@@ -3,6 +3,8 @@ var router = express.Router()
 var nodemailer = require('nodemailer');
 
 router.post('/', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     var smtpTransport = nodemailer.createTransport("SMTP",{
     service: 'Hotmail',
     auth: {
