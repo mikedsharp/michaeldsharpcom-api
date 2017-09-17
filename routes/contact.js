@@ -5,13 +5,18 @@ var nodemailer = require('nodemailer');
 router.post('/', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    var smtpTransport = nodemailer.createTransport("SMTP",{
-    service: 'Hotmail',
-    auth: {
-        "user":   process.env.EMAIL,
-        "pass":   process.env.PASSWORD,
-    }
-    });
+    
+    let smtpConfig = {
+        host: 'smtp.live.com',
+        port: 587,
+        secure: true, // upgrade later with STARTTLS
+        auth: {
+            user: process.env.EMAIL,
+            pass: process.env.PASSWORD
+        }
+    };
+    
+    var smtpTransport = nodemailer.createTransport(smtpConfig);
 
     var mailOptions = {
         "from": process.env.EMAIL, 
