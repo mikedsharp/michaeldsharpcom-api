@@ -20,7 +20,7 @@ router.post('/', function(req, res, next) {
         "to": process.env.EMAIL,
         "subject": "A user query from michaeldsharp.com",
         "text": "recipient email: " + req.body.from + 
-                "recipient name: " + req.body.name +
+                "\nrecipient name: " + req.body.name +
                 "\nMessage: " + req.body.body
     };
 
