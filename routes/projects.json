@@ -1,112 +1,110 @@
 {
-    "data":{
-         "projects" : [
-        {
-            "name": "Rebound", 
-            "id": "rebound", 
-            "bgImage": "rebound-thumb.png", 
-            "content": {
-                "slides": ["rebound-screenshot-1.png"], 
-                "subHeading": "A pong/breakout clone with elements of random generation", 
-                "paragraphs": [
-                    "Rebound was written in C++, making use of the SFML multimedia library, the project was carried out from start to finish in 1 month for the Moosader Boards randomly generated/procedurally generated games competition.", 
-                    "The game contained elements of random world generation, users goal is to achieve a winning number of points, utilizing crates that act as modifiers to the scores of either player, the theme of the world and arrangement of crates.",
-                    "The aim of the project was to explore the extent to which a random change in gameplay parameters could affect the fun-factor and replayability of the game."
-                ], 
-                "links": [
-                    {
-                        "url": "https://github.com/programmerinprogress/rebound", 
-                        "text": "Source"
-                    }
-                ]
+  "data": {
+    "projects": [
+      {
+        "name": "Rebound",
+        "id": "rebound",
+        "bgImage": "rebound-thumb.png",
+        "content": {
+          "slides": ["rebound-screenshot-1.png"],
+          "subHeading": "A pong/breakout clone with elements of random generation",
+          "paragraphs": [
+            "Rebound was written in C++, making use of the SFML multimedia library, the project was carried out from start to finish in 1 month for the Moosader Boards randomly generated/procedurally generated games competition.",
+            "The game contained elements of random world generation, users goal is to achieve a winning number of points, utilizing crates that act as modifiers to the scores of either player, the theme of the world and arrangement of crates.",
+            "The aim of the project was to explore the extent to which a random change in gameplay parameters could affect the fun-factor and replayability of the game."
+          ],
+          "links": [
+            {
+              "url": "https://github.com/programmerinprogress/rebound",
+              "text": "Source"
             }
-            
-        }, 
-         {
-            "name": "MapWork", 
-            "id": "mapwork", 
-            "bgImage": "mapwork-thumb.png", 
-                 "content": {
-                "slides": ["mapwork-screenshot-1.png"], 
-                "subHeading": "A HTML5 Canvas-based 2D game map editing tool", 
-                "paragraphs": [
-                    "MapWork was my final dissertation product from my Computer Science Degree (of which I gained a 1st!)", 
-                    "The intent of MapWork was to assess the feasibility of modern browser functionality for building game creation tools which are instantly accessible, update automatically, and provide a means for a team to collaborate on projects.", 
-                    "The project did not meet every one of these goals (storage requirements of the map files where deemed too large and implementation time of the back-end were out of scope for the time allocated), but it was an exciting exploration into the constantly improving capabilities of the modern web, and I think (for the time) is a good demonstration of the rendering capabilities of the HTML5 Canvas.", 
-                    "I endeavour one day to revisit technology in this space, as browser capabilities continue to improve!"
-                ], 
-                "links": [
-                    {
-                        "url": "https://www.youtube.com/watch?v=Q_2LNGzoTtM", 
-                        "text": "Video"
-                    }
-                ]
-            }
-        },
-         {
-            "name": "BLOCK", 
-            "id": "block", 
-            "bgImage": "block-thumb.png", 
-                 "content": {
-                "slides": ["block-screenshot-1.png"], 
-                "subHeading": "A quirky (read: terrible) 2D platformer I wrote in C++ back in 2008!", 
-                "paragraphs": [
-                    "BLOCK is a project that I will always have a place in my heart, it is the project that really helped me cut my teeth in programming.", 
-                    "The game consists of a little square (called BLOCK), who has to jump on ledges, avoid spike pits and collect yellow coins to complete the level...", 
-                    "...I know what you're thinking, that doesn't sound like great gameplay, perhaps you're right, but I did learn an awful lot from building BLOCK, and i'm very proud to say I wrote it!"
-                ], 
-                "links": [
-                    {
-                        "url": "https://www.youtube.com/watch?v=1xE9gM54mkI", 
-                        "text": "Video 1"
-                    }, 
-                    {
-                        "url": "https://www.youtube.com/watch?v=5TnCQslOU5M", 
-                        "text": "Video 2"
-                    }
-                ]
-
-            }
-        },
-         {
-            "name": "Alien Invasion", 
-            "id": "alien-invasion", 
-            "bgImage": "alien_invasion-thumb.png", 
-                 "content": {
-                "slides": ["alien_invasion-screenshot-1.png"], 
-                "subHeading": "A Space Invaders clone I wrote as a show piece for applying to universities, written in C++", 
-                "paragraphs": [
-                    "I had an awful lot of fun writing this game, with a self-assigned deadline of 6 weeks I challenged myself to write a simple game that I could burn to CD (yes, CD!) and demo to prospective universities when I applied to them.", 
-                    "The game plays like a classic Space Invaders game, you can control your ship with the left and right arrow keys, and shoot with the spacebar at enemies that draw ever closer to you!", 
-                    "I wrote all of the code, and drew all of the graphics for the game, I hope you can forgive me for the latter..."
-                ], 
-                "links": [
-                    {
-                        "url": "https://www.youtube.com/watch?v=2BzDCEyreyc", 
-                        "text": "Video"
-                    }
-                   
-                ]
-            }
-        },
-         {
-            "name": "Meteor defence", 
-            "id": "meteor-defence", 
-            "bgImage": "meteor_defence-thumb.png", 
-                 "content": {
-                "slides": ["meteor_defence-screenshot-1.png"], 
-                "subHeading": "A small game I wrote in C++ using the SFML library", 
-                "paragraphs": [
-                    "The aim of Meteor Defence is to protect your city from destruction from meteors using rockets. The user has a crosshair they control with their mouse.", 
-                    "The game features use of sprite rotation and positions calculated using Vectors and Trigonometry (my first major game to do this!), the graphics were all done by yours truly, so that's why they're pretty terrible...", 
-                    "The game only took a couple of weekends to complete because it used existing engine code I had written during other projects."
-                ], 
-                "links": [
-                
-                ]
-            } 
+          ]
         }
+      },
+      {
+        "name": "MapWork",
+        "id": "mapwork",
+        "bgImage": "mapwork-thumb.png",
+        "content": {
+          "slides": ["mapwork-screenshot-1.png"],
+          "subHeading": "A HTML5 Canvas-based 2D game map editing tool",
+          "paragraphs": [
+            "MapWork was my final dissertation product from my Computer Science Degree (of which I gained a 1st!)",
+            "The intent of MapWork was to assess the feasibility of modern browser functionality for building game creation tools which are instantly accessible, update automatically, and provide a means for a team to collaborate on projects.",
+            "The project did not meet every one of these goals (storage requirements of the map files where deemed too large and implementation time of the back-end were out of scope for the time allocated), but it was an exciting exploration into the constantly improving capabilities of the modern web, and I think (for the time) is a good demonstration of the rendering capabilities of the HTML5 Canvas.",
+            "I endeavour one day to revisit technology in this space, as browser capabilities continue to improve!"
+          ],
+          "links": [
+            {
+              "url": "https://www.youtube.com/watch?v=Q_2LNGzoTtM",
+              "text": "Video"
+            },
+            {
+              "url": "http://mds-mapwork.s3-website-eu-west-1.amazonaws.com",
+              "text": "Live Demo"
+            }
+          ]
+        }
+      },
+      {
+        "name": "BLOCK",
+        "id": "block",
+        "bgImage": "block-thumb.png",
+        "content": {
+          "slides": ["block-screenshot-1.png"],
+          "subHeading": "A quirky (read: terrible) 2D platformer I wrote in C++ back in 2008!",
+          "paragraphs": [
+            "BLOCK is a project that I will always have a place in my heart, it is the project that really helped me cut my teeth in programming.",
+            "The game consists of a little square (called BLOCK), who has to jump on ledges, avoid spike pits and collect yellow coins to complete the level...",
+            "...I know what you're thinking, that doesn't sound like great gameplay, perhaps you're right, but I did learn an awful lot from building BLOCK, and i'm very proud to say I wrote it!"
+          ],
+          "links": [
+            {
+              "url": "https://www.youtube.com/watch?v=1xE9gM54mkI",
+              "text": "Video 1"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=5TnCQslOU5M",
+              "text": "Video 2"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Alien Invasion",
+        "id": "alien-invasion",
+        "bgImage": "alien_invasion-thumb.png",
+        "content": {
+          "slides": ["alien_invasion-screenshot-1.png"],
+          "subHeading": "A Space Invaders clone I wrote as a show piece for applying to universities, written in C++",
+          "paragraphs": [
+            "I had an awful lot of fun writing this game, with a self-assigned deadline of 6 weeks I challenged myself to write a simple game that I could burn to CD (yes, CD!) and demo to prospective universities when I applied to them.",
+            "The game plays like a classic Space Invaders game, you can control your ship with the left and right arrow keys, and shoot with the spacebar at enemies that draw ever closer to you!",
+            "I wrote all of the code, and drew all of the graphics for the game, I hope you can forgive me for the latter..."
+          ],
+          "links": [
+            {
+              "url": "https://www.youtube.com/watch?v=2BzDCEyreyc",
+              "text": "Video"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Meteor defence",
+        "id": "meteor-defence",
+        "bgImage": "meteor_defence-thumb.png",
+        "content": {
+          "slides": ["meteor_defence-screenshot-1.png"],
+          "subHeading": "A small game I wrote in C++ using the SFML library",
+          "paragraphs": [
+            "The aim of Meteor Defence is to protect your city from destruction from meteors using rockets. The user has a crosshair they control with their mouse.",
+            "The game features use of sprite rotation and positions calculated using Vectors and Trigonometry (my first major game to do this!), the graphics were all done by yours truly, so that's why they're pretty terrible...",
+            "The game only took a couple of weekends to complete because it used existing engine code I had written during other projects."
+          ],
+          "links": []
+        }
+      }
     ]
-
-    }
+  }
 }
